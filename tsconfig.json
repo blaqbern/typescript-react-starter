@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es5",
+      "es2015.promise",
+      "es2016.array.include"
+    ],
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "allowJs": false,
+    "checkJs": false,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false
+  },
+  "compileOnSave": false,
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ],
+  "exclude": ["node_modules"]
+}
