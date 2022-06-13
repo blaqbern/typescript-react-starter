@@ -1,0 +1,15 @@
+name: Acknowlegement
+on:
+  create
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '👋 Testing 1, 2... 3?'
+            })
